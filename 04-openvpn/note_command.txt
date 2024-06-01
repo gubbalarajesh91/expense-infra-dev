@@ -26,3 +26,6 @@ The key's randomart image is:
 |       .         |
 |                 |
 +----[SHA256]-----+
+
+
+ssh -i ~/.ssh/openvn openvpnas <Ip address>
