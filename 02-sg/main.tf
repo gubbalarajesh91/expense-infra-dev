@@ -67,7 +67,7 @@ module "vpn" {
 
 
 
-
+#Security group Rules
 #Db is accepting connections from Backend
 resource "aws_security_group_rule" "db_backend" {
   type              = "ingress"
