@@ -1,0 +1,28 @@
+$ cd ~/.ssh/
+bash: cd: /c/Users/User/.ssh/: No such file or directory
+
+User@RajeshGubbala MINGW64 ~
+$ pwd
+/c/Users/User
+
+User@RajeshGubbala MINGW64 ~
+$ ssh-keygen -f openvpn
+Generating public/private ed25519 key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in openvpn
+Your public key has been saved in openvpn.pub
+The key fingerprint is:
+SHA256:ixOTCSXnhSUGAReNPeWFl7VMCK9kOJMYn0Eu5KgQjME User@RajeshGubbala
+The key's randomart image is:
++--[ED25519 256]--+
+|*...OOB+=o.+o    |
+|.E =.@=O.o+o .   |
+|. . = X.+.. o    |
+|..   o B .       |
+|.     = S        |
+|       + .       |
+|      o .        |
+|       .         |
+|                 |
++----[SHA256]-----+
