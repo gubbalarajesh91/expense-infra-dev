@@ -22,10 +22,9 @@ resource "aws_lb_listener" "http" {
   protocol          = "HTTP"
   
   default_action {
-    type             = "forward"
-
-
-   fixed_response {
+    type             = "fixed-response"
+    
+    fixed_response {
      content_type = "text/html"
      message_body = "<h1>Fixed response from APP ALB</h1>"
      status_code  = "200"
@@ -33,6 +32,7 @@ resource "aws_lb_listener" "http" {
   }
 }
 
+### Route53 Records #######
 module "records" {
   source  = "terraform-aws-modules/route53/aws//modules/records"
   version = "~> 2.0"
@@ -48,7 +48,6 @@ module "records" {
         name = aws_lb.app_alb.dns_name
         zone_id = aws_lb.app_alb.zone_id
       }
+    }
       ]
     }
-  ]
-}

@@ -13,10 +13,11 @@ variable "common_tags" {
         Project = "expense"
         Environment = "dev"
         Terraform = "true"
-        Component = "backend"
+        Component = "web_alb"
     }
   
 }
+
 
 variable "zone_name" {
   default = "indix.store"
