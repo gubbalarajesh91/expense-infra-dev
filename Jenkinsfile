@@ -64,7 +64,7 @@ pipeline {
             steps {
                 sh """
                 cd 01-vpc
-                terraform Destroy -auto-approve
+                terraform destroy -auto-approve
                 """
             }
         }
